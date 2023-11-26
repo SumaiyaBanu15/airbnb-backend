@@ -11,7 +11,7 @@ const getMyBooking = async(req,res)=>{
         })
     } catch (error) {
         res.status(500).send({message:"Internal Server Error",
-        error:error.meaasge
+        error:error.message
        })
     }
 }
