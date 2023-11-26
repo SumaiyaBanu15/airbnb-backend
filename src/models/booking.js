@@ -6,7 +6,7 @@ const validateEmail = (e)=> {
 
 const bookingSchema = new mongoose.Schema({
    roomId: {type:String, required:[true,"Room Id is required"]},
-   email: {type:String, required:[true,"Email is Required"],validateEmail},
+   email: {type:String, required:[true,"Email is Required"],validate:validateEmail},
    title: {type:String, required:[true,"Title is required"]},
    customerName: {type:String, required:[true,"Name is required"]},
    checkIn: {type:String, required:[true,"Check-In Date is required"]},

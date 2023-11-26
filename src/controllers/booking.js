@@ -60,7 +60,7 @@ const roomBooking = async(req,res)=>{
                 checkOut
             })
             res.status(201).send({
-                message:"Roob Booked Successfully"
+                message:"Room Booked Successfully"
             })
         }
         else{

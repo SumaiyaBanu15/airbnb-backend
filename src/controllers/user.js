@@ -11,7 +11,7 @@ const create = async(req,res)=>{
         res.status(201).send({
             message:"User Created Successfully"
         })
-        console.log('Server Response:', res.data);
+        // console.log('Server Response:', res.data);
 
     }
     else{

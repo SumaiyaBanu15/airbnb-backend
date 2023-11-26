@@ -6,7 +6,7 @@ const validateEmail = (e)=> {
 
 const userSchema = new mongoose.Schema({
     name:{type:String, required:[true,"Name is Required"]},
-    email:{type:String, required:[true,"Email is Required"],validateEmail},
+    email:{type:String, required:[true,"Email is Required"],validate:validateEmail},
     password:{type:String, required:[true,"Password is Required"]}
 },{
     collection:'users',
