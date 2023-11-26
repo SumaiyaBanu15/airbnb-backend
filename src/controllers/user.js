@@ -50,7 +50,8 @@ const login = async(req,res)=>{
                 })
             }
         }
-        else{
+        else
+        {
             res.status(400).send({
                 message:`Account with ${req.body.email} doesn't exists!`
             })

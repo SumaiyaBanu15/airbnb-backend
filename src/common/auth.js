@@ -25,6 +25,8 @@ const decodeToken = async(token)=>{
 
 const validate = async(req,res,next)=>{
     let token = req.headers.authorization?.split(" ")[1]
+    // console.log('Authorization Header:', req.headers.authorization);
+
     if(token)
     {
       let payload = await decodeToken(token)
