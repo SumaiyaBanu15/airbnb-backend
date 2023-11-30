@@ -6,6 +6,7 @@ const getMyBooking = async(req,res)=>{
         const bookings = await bookingModel.find();
         res.status(200).send({
             message:"Your Bookings Fetched Successfully",
+            count:bookings.length,
             bookings
         })
     } catch (error) {
