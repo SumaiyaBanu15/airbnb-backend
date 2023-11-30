@@ -18,6 +18,6 @@ const bookingSchema = new mongoose.Schema({
     versionKey: false
 })
 
-const bookingModel = mongoose.model('booking', bookingSchema)
+const bookingModel = mongoose.model('mybookings', bookingSchema)
 
 export default bookingModel

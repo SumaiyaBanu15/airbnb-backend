@@ -2,6 +2,7 @@ import express from 'express'
 import UserRoutes from './user.js'
 import CardRoutes from './cards.js'
 import BookingRoutes from './booking.js'
+import RoomRoutes from './rooms.js'
 
 const router = express.Router()
 
@@ -12,5 +13,6 @@ router.get('/',(req,res)=>{
 router.use('/user', UserRoutes)
 router.use('/cards', CardRoutes)
 router.use('/booking', BookingRoutes)
+router.use('/room',RoomRoutes)
 
 export default router
