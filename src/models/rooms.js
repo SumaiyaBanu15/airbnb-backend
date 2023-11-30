@@ -9,7 +9,7 @@ const roomSchema = new mongoose.Schema({
     place: {type:String, required:[true,"Place is required"]},
     noOfPerson: {type:Number, required:[true,"No of Person is required"]},
     amenities: {type:String, required:[true,"Select your needed amenities"]},
-    pricePerNight: {type:Number},
+    pricePerNight: {type: Number},
     checkIn: {type:String, required:[true,"Check-In Date is required"]},
     checkOut: {type:String, required:[true,"Check-Out Date is required"]},
     status: {type:String, default:false},
