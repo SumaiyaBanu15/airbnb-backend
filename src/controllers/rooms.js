@@ -54,7 +54,7 @@ const createRoom = async(req,res)=>{
             })
         }
     } catch (error) {
-        console.error("Error :", error);
+        // console.error("Error :", error);
         res.status(500).send({
             message:"Internal Server Error",
             error:error.message
